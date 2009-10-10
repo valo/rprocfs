@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "ext/rprocfs/extconf.rb",
-     "ext/rprocfs/rprocfs.c",
+     "ext/rprocfs/native.c",
      "lib/rprocfs.rb",
      "rprocfs.gemspec",
      "test/rprocfs_test.rb",
