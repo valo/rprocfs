@@ -56,7 +56,7 @@ module Stat
       :guest_time => :to_i,
       :cguest_time => :to_i}
 
-    def parse(pid)
+    def stat_parse(pid)
       stat = File.read("/proc/#{pid}/stat").chomp.split(" ")
 
       result = {}
@@ -75,7 +75,7 @@ module Stat
 
     STAT_FIELDS.each do |field|
       define_method field do |pid|
-        parse(pid)[field]
+        stat_parse(pid)[field]
       end
     end
   end
