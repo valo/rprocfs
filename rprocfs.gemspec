@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rprocfs}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Valentin Mihov"]
@@ -27,9 +27,13 @@ Gem::Specification.new do |s|
      "ext/rprocfs/extconf.rb",
      "ext/rprocfs/native.c",
      "lib/rprocfs.rb",
+     "lib/rprocfs/stat.rb",
+     "lib/rprocfs/stat_m.rb",
      "rprocfs.gemspec",
-     "test/rprocfs_test.rb",
-     "test/test_helper.rb"
+     "spec/rprocfs/stat.rb",
+     "spec/rprocfs/statm.rb",
+     "spec/rprocfs_spec.rb",
+     "spec/spec_helper.rb"
   ]
   s.homepage = %q{http://github.com/valo/rprocfs}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -37,8 +41,10 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{Ruby proc filesystem interface}
   s.test_files = [
-    "test/rprocfs_test.rb",
-     "test/test_helper.rb"
+    "spec/rprocfs/stat.rb",
+     "spec/rprocfs/statm.rb",
+     "spec/rprocfs_spec.rb",
+     "spec/spec_helper.rb"
   ]
 
   if s.respond_to? :specification_version then
