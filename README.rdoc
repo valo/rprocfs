@@ -10,8 +10,8 @@ gem install rprocfs
 
 require 'rprocfs'
 
-puts "User time of the current process: #{RProcFS.utime($$)}"
-puts "Current data memory size of the current process: #{RProcFS.data($$)}"
+  puts "User time of the current process: #{RProcFS.utime($$)}"
+  puts "Current data memory size of the current process: #{RProcFS.data($$)}"
 
 == Copyright
 
