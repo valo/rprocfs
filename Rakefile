@@ -5,13 +5,12 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "rprocfs"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Ruby proc filesystem interface}
+    gem.description = %Q{A library, which allows easily reading various process stats from the proc filesystem}
     gem.email = "valentin.mihov@gmail.com"
     gem.homepage = "http://github.com/valo/rprocfs"
     gem.authors = ["Valentin Mihov"]
-    gem.add_development_dependency "thoughtbot-shoulda"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.extensions << 'ext/rprocfs/extconf.rb'
   end
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
