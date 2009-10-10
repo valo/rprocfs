@@ -4,12 +4,12 @@ A simple ruby lib for reading process details from the proc filesystem.
 
 == Install
 
-gem install rprocfs
+  gem install rprocfs
 
 == Usage
 
-require 'rprocfs'
-
+  require 'rprocfs'
+  
   puts "User time of the current process: #{RProcFS.utime($$)}"
   puts "Current data memory size of the current process: #{RProcFS.data($$)}"
 
