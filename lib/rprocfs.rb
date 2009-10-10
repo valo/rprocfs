@@ -1,0 +1,1 @@
+require 'rprocfs/native'

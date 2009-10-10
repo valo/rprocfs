@@ -24,7 +24,10 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "ext/rprocfs/extconf.rb",
+     "ext/rprocfs/rprocfs.c",
      "lib/rprocfs.rb",
+     "rprocfs.gemspec",
      "test/rprocfs_test.rb",
      "test/test_helper.rb"
   ]
