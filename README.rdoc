@@ -10,6 +10,7 @@ The gem is hosted on gemcutter, so you will have to add the gemcutter to your so
 
 == Usage
 
+  require 'rubygems'
   require 'rprocfs'
   
   puts "User time of the current process: #{RProcFS.utime($$)}"
