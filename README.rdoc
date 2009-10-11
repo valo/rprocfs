@@ -12,6 +12,10 @@ A simple ruby lib for reading process details from the proc filesystem.
   
   puts "User time of the current process: #{RProcFS.utime($$)}"
   puts "Current data memory size of the current process: #{RProcFS.data($$)}"
+  
+== Portability
+
+Currently this is tested only on ubuntu 9.04 system. It should work on most linux systems. Please file an issue if you find any problem.
 
 == Copyright
 
