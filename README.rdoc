@@ -3,7 +3,9 @@
 A simple ruby lib for reading process details from the proc filesystem.
 
 == Install
+The gem is hosted on gemcutter, so you will have to add the gemcutter to your sources first:
 
+  gem sources --add http://gemcutter.org
   gem install rprocfs
 
 == Usage
