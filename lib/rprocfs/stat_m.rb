@@ -8,7 +8,7 @@ module StatM
     PAGES_TO_BYTES = lambda { |value| value.to_i * RProcFS::MEMORY_PAGESIZE }
     STATM_FIELDS_FORMAT = STATM_FIELDS.inject({}) { |hash, field| hash[field] = PAGES_TO_BYTES; hash }
 
-    def parse(pid)
+    def statm_parse(pid)
       stat = File.read("/proc/#{pid}/statm").chomp.split(" ")
 
       result = {}
@@ -27,7 +27,7 @@ module StatM
 
     STATM_FIELDS.each do |field|
       define_method field do |pid|
-        parse(pid)[field]
+        statm_parse(pid)[field]
       end
     end
   end
