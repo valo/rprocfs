@@ -40,6 +40,10 @@ Let's say you want to run a process and measure its user + system time. Here is 
 
   puts "Time: %0.3f" % time
 
+== Docs
+
+Currently the lib is not very well documented. More information you can get from "man proc". Currently the lib parses /proc/{pid}/stat and /proc/{pid}/statm. The names of the API is the same as the names in the manpage.
+
 == Portability
 
 Currently this is tested only on ubuntu 9.04 system. It should work on most linux systems. Please file an issue if you find any problem.
