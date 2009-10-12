@@ -1,4 +1,4 @@
-module StatM
+module RProcFS::StatM
   def self.included(base)
     base.extend ClassMethods
   end

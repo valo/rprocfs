@@ -5,8 +5,6 @@ require 'rprocfs/stat'
 require 'rprocfs/stat_m'
 
 class RProcFS
-  include Stat
-  include StatM
-  
-  MEMORY_PAGESIZE = `getconf PAGESIZE`.to_i
+  include RProcFS::Stat
+  include RProcFS::StatM
 end
