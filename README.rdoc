@@ -29,7 +29,7 @@ Let's say you want to run a process and measure its user + system time. Here is 
 
   time = 0
   begin
-      # Sums the utime, stime, cutime and cstime of the current process
+      # Sums the utime, stime, cutime and cstime of the process
       # utime - user time of the process
       # stime - system time of the process
       # cutime - the user time of the children of the process
