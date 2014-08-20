@@ -6,10 +6,9 @@ A simple ruby lib for reading process details from the proc filesystem.
 Install
 -------
 
-The gem is hosted on gemcutter, so you will have to add the gemcutter to your sources first:
+Install the gem using rubygems and you are ready to go:
 
 ```bash
-gem sources --add http://gemcutter.org
 gem install rprocfs
 ```
 
@@ -17,7 +16,7 @@ Usage
 -----
 
 ```ruby
-require 'rubygems'
+require 'rubygems' # This is not needed for ruby > 1.8
 require 'rprocfs'
   
 puts "User time of the current process: #{RProcFS.utime($$)}"
