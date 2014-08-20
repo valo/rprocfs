@@ -49,6 +49,7 @@ begin
 end until(Process.waitpid(pid, Process::WNOHANG))
 
 puts "Time: %0.3f" % time
+```
 
 Docs
 ----
